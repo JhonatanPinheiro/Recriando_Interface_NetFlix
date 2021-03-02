@@ -1,0 +1,110 @@
+:root{
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Elementos base*/
+
+body{
+    background: var(--preta);
+    font-family: "Helvetica", sans-serif, arial black;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: "Helvetica", Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+    font-weight: 700;
+}
+
+/* Filme principal*/
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)100%), url('../images/capa-la-reina-del-flow.png');
+    height: 590px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+}
+
+.botao{
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .8s ease all;
+    font-weight: 600;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+.botao i{
+    margin-right: 8px;
+}
+
+/*
+    # WRAPPER = ENVELOPAR
+
+*/
+.box-filme{
+    height:100%;
+    width:100%;
+    display:block;
+}
+
+.carrosel-filmes{
+    margin-top:10px;
+}
